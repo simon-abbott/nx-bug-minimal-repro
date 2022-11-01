@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "extends": "@nrwl/workspace/presets/npm.json",
+  "npmScope": "nx-migration-repro",
+  "workspaceLayout": {
+    "libsDir": "packages"
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"]
+    }
+  },
+  "implicitDependencies": {
+    ".eslintrc.js": "*",
+    ".eslintignore": "*",
+    "jest-setup.js": "*",
+    "lerna.json": "*",
+    ".npmrc": "*",
+    "support/file1": ["pkg1"],
+    "support/file2": ["pkg2"]
+  }
+}

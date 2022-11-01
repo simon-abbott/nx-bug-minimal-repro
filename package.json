@@ -1,0 +1,21 @@
+{
+  "name": "nx-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "lerna bootstrap"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nrwl/cli": "15.0.4",
+    "@nrwl/workspace": "15.0.4",
+    "lerna": "6.0.1",
+    "nx": "15.0.4"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
